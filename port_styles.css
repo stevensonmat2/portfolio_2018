@@ -1,0 +1,209 @@
+body {
+    /*   background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/light-blue-tech-geometric-polygonal-motion-background-video-corporate-animation-hd-1920x1080_nde0ffkig__F0000.png)center; */
+    background: linear-gradient(#a6bbda, #14294b);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    overflow: auto;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    position: relative;
+    /*     clear: both; */
+    overflow: hidden;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-image: url(https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/21730829_728605724004148_5329430323578639737_n.jpg?oh=12509e9ca2d4d0d4e6bd6bc7ca35a9ec&oe=5A52DD75);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Avenir W01';
+    letter-spacing: 5px;
+    font-smoothing: antialiased;
+}
+
+h1 {
+    font-weight: 900;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 8vw;
+    text-stroke: 6px black;
+    color: white;
+    text-shadow: .06em .06em 0 #000,
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#intro, #bio, #projects, #contact {
+    /*   background-color: white; */
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: 21px;
+    font-family: 'Avenir W01';
+    text-stroke: 5px black;
+    color: whitesmoke;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+    /*   height: 100vh; */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#intro div, #bio div, #projects div, #contact div {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+    font-smoothing: antialiased;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+}
+
+.slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 18s ease infinite;
+}
+
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+
+.slide:nth-child(1) {
+    background: #D93B65;
+}
+
+.slide:nth-child(2) {
+    background: #037E8C;
+}
+
+.slide:nth-child(3) {
+    background: #36BF66;
+}
+
+.slide:nth-child(4) {
+    background: #D9D055;
+}
+
+.slide-number {
+    color: #000;
+    text-align: center;
+    font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+    20% {
+        margin-left: 0px;
+    }
+    30% {
+        margin-left: -728px;
+    }
+    50% {
+        margin-left: -728px;
+    }
+    60% {
+        margin-left: -1456px;
+    }
+    70% {
+        margin-left: -1456px;
+    }
+    80% {
+        margin-left: -2184px;
+    }
+    90% {
+        margin-left: -2184px;
+    }
+}
+
+.button {
+    text-decoration: none;
+    font-size: 3vw;
+    background: rgba(0, 0, 0, 0.43);
+    color: #fff;
+    height: 2.9em;
+    line-height: 4em;
+    border-radius: 1px;
+    padding: 0 2em 0 2em;
+    /*     display: inline-block; */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.other {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.button:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, .8);
+    opacity: 0.5;
+    color: #000;
+    outline: 1px solid #999;
+}
+
+.up {
+    text-decoration: none;
+    font-size: 1.5em;
+    /*background: rgba(0, 0, 0, 0.43);*/
+    color: #fff;
+    height: 2.9em;
+    /*line-height: 4em;*/
+    border-radius: 1px;
+    padding: .3em .5em .3em .5em;
+    text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    /*position: absolute;*/
+    top: 10px;
+    height: 1em;
+    left: 50%;
+    transform: translatex(-50%);
+    transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.up:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, .8);
+    opacity: 0.5;
+    color: #000;
+    outline: 1px solid #999;
+}
+
+@media all and (max-width: 580px) {
+
+    .button {
+        font-size: .8em;
+    }
+}
+
+/*@media all and (max-width: 1200px) {*/
+
+/*.button {*/
+/*bottom: 100px;*/
+/*}*/
+/*}*/
+@media all and (min-width: 650px) {
+
+    .button {
+        font-size: .9em;
+    }
+}
