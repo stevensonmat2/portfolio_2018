@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+
+</head>
+<body>
+
+
+<div id="header">
+
+    <div id="logo_container">
+
+        <img id='logo' src="logo.png" alt="logo">
+
+    </div>
+
+    <div id="menu_container">
+
+        <div class="menu_item" id="work" onclick="toggle_work('thumb_container'); change_opactiy('work')">
+            WORK
+        </div>
+
+        <div class="menu_item" id="resume" onclick="toggle_visibility('resume_container'); change_opactiy('resume')">
+            RESUME
+        </div>
+
+        <div class="menu_item" id="about" onclick="toggle_visibility('about_container'); change_opactiy('about')">
+            ABOUT
+        </div>
+
+    </div>
+
+
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+    </div>
+
+</div>
+
+
+<div class="page_item resumeBox" id="resume_container">
+
+    <img class="resume_fit myImg" src="resume.png" alt="resume" width="550" height="748">
+
+    <a href="resume.png">Download PDF</a>
+
+</div>
+
+<div class="page_item" id="about_container">
+
+    <!--<img class="nicole_about" src="about_nicole.png" alt="resume">-->
+
+    <div id="about_text">
+        Hi! I'm Nicole.<br>
+        <br>
+        I'm a graphic designer in Portland, Oregon with a passion for brand and marketing design.<br>
+        I have developed my experience working with regional, national, and international organizations,<br>
+        helping all of them to effectively implement their design strategies. While I often work independently,<br>
+        I enjoy collaborative processes, and I appreciate the personal relationships that form through working together.<br>
+        <br>
+        Let me know if I can help bring your vision to life!
+    </div>
+
+</div>
+
+<div class="thumb_container page_item" id='thumb_container'>
+
+    <div class="thumbs" id="thumb_1">
+
+        <img class="myImg" src="gif.gif" alt="gif" width="700" height="425">
+
+        <div class="caption">lololol</div>
+
+    </div>
+
+    <div class="thumbs" id="thumb_2">
+        <img class="myImg" src="RAZEPOSTER.PNG" alt="gif" width="700" height="425">
+        <div class="caption">Questa e' una prova</div>
+    </div>
+
+    <div class="thumbs" id="thumb_3">
+        <img class="myImg" src="pickle.png" alt="pickle" width="700" height="425">
+        <div class="caption">Questa e' una prova</div>
+    </div>
+
+    <div class="thumbs" id="thumb_4">
+        <img class="myImg" src="OTA_Manual.png" alt="pickle" width="700" height="425">
+        <div class="caption">Questa e' una prova</div>
+    </div>
+
+    <!-- <div class="thumbs" id="thumb_5">
+        <p>lololol</p>
+    </div>
+
+    <div class="thumbs" id="thumb_6">
+
+    </div>
+
+    <div class="thumbs" id="thumb_7">
+
+    </div>
+
+    <div class="thumbs" id="thumb_8">
+
+    </div>
+
+    <div class="thumbs" id="thumb_9"> -->
+
+</div>
+
+</div>
+
+</body>
+<script src="js.js"></script>
+</html>
