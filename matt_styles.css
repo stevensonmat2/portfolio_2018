@@ -1,0 +1,318 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    height: 100vh;
+}
+
+media screen and (max-width: 480px) {
+
+  h1 {
+      -webkit-animation: fadein_header 2s;
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+      top:100px;
+  }
+
+  p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 60px;
+  }
+
+  p:hover {
+    color: white;
+    cursor: crosshair;
+  }
+
+  a {
+      cursor: crosshair;
+      color: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 60px;
+      text-decoration: none !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    cursor: crosshair;
+  }
+
+  ul, ul>li {
+    list-style: none;
+  }
+
+  li:hover {
+    color: white;
+  }
+
+}
+
+@media screen and (min-width: 480px) {
+
+
+  h1 {
+      -webkit-animation: fadein_header 2s;
+      color: white;
+      font-size: 18px;
+      font-weight: 400;
+      top:100px;
+  }
+
+  p {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 60px;
+  }
+
+  p:hover {
+    color: white;
+    cursor: crosshair;
+  }
+
+  a {
+      cursor: crosshair;
+      color: inherit;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      width: 60px;
+      text-decoration: none !important;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+    cursor: crosshair;
+  }
+
+  ul, ul>li {
+    list-style: none;
+  }
+
+  li:hover {
+    color: white;
+  }
+
+  #container {
+    display: flex;
+    text-align: center;
+  }
+
+  .page_item {
+    z-index: 1;
+    width: 300px;
+    height: 100px;
+    padding: 20px;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    margin: -70px 0 0 -170px;
+    line-height: 1.5;
+    background-color: none;
+    height: 50%;
+    width: 30%;
+  }
+
+  .no_display {
+    z-index: 1;
+    display: none;
+    opacity: 0;
+    -webkit-animation: fadein_menu_items .5s;
+    -webkit-animation-fill-mode: forwards;
+    text-align: center;
+  }
+
+  #center_page {
+
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    text-align: center;
+  }
+
+  #front_page_text {
+    z-index: 1;
+    position: absolute;
+    -webkit-animation: fadein_news 4s;
+    -webkit-animation-delay: .5s;
+    -webkit-animation-fill-mode: forwards;
+    left: 47%;
+  }
+
+  #triangle_one {
+    z-index: 0;
+    position: absolute;
+    display: block;
+    left: 90%;
+    /* -webkit-animation: rotate_triangle 15s infinite;
+    animation-direction: alternate;
+    animation-duration: infinite;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out; */
+  	width: 0;
+  	height: 0;
+  	border-left: 50px solid transparent;
+  	border-right: 50px solid transparent;
+  	border-bottom: 100px solid gray;
+
+    animation: moveX 7.05s linear 0s infinite alternate,
+               moveY 7.4s linear 0s infinite alternate;
+  }
+
+  
+  /*#news_links {*/
+
+      /*height: 100vh;*/
+  /*}*/
+  .menu_item {
+    align-content: center;
+  }
+
+  .menu_item:hover {
+    color: gray !important;
+  }
+
+  #menu {
+    height: 100%;
+    width: 200px;
+    margin-right: 0px;
+  }
+
+  #listen {
+    -webkit-animation: fadein 1s;
+    -webkit-animation-delay: .3s;
+     -webkit-animation-fill-mode: forwards;
+  }
+
+  #contact {
+    -webkit-animation: fadein 1s;
+    -webkit-animation-delay: .5s;
+     -webkit-animation-fill-mode: forwards;
+  }
+
+  #about {
+    -webkit-animation: fadein 1s;
+    -webkit-animation-delay: 1.1s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  #tutorials {
+    -webkit-animation: fadein 1s;
+    -webkit-animation-delay: 1.3s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  #press {
+    -webkit-animation: fadein 1s;
+    -webkit-animation-delay: .9s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  #social {
+    -webkit-animation: fadein 1s;
+    -webkit-animation-delay: .7s;
+    -webkit-animation-fill-mode: forwards;
+  }
+
+  player {
+    -webkit-animation: fadein_player 5s;
+    /* -webkit-animation-delay: 3s; */
+    -webkit-animation-fill-mode: forwards;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+  }
+
+  /* animations */
+
+  @keyframes fadein {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+      from { color: black}
+      to { color: gray}
+  }
+
+  @keyframes fadein_header {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+  }
+
+  @keyframes fadein_player {
+      from { opacity: 0; }
+      to   { opacity: .6; }
+  }
+
+  @keyframes fadein_news {
+      0% { color: black}
+      75% { color: white}
+      100% { display: none}
+  }
+
+  @keyframes fadein_menu_items {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+      from { color: black}
+      to { color: white}
+  }
+
+  @keyframes rotate_triangle {
+        0% {
+    				-webkit-transform: rotate(0deg);
+            right: 500px;
+    		}
+        25% {
+    				/* -webkit-transform: rotate(360deg); */
+            /* right: 500px; */
+            up: 500px;
+    		}
+        50% {
+    				/* -webkit-transform: rotate(360deg); */
+            left: 300px;
+            opacity: 0;
+    		}
+        75% {
+    				/* -webkit-transform: rotate(360deg); */
+            /* right: 1000px; */
+    		}
+    		100% {
+    				-webkit-transform: rotate(360deg);
+            left: 500px;
+
+    		}
+    }
+
+  /*triangle animation  */
+    @-webkit-keyframes moveX {
+      from { -webkit-transform: rotate(0deg), left: 0; } to { -webkit-transform: rotate(360deg) left: 200px; }
+    }
+   /* @-moz-keyframes moveX {
+      from { left: 0; } to { left: 200px; }
+    }
+   @-o-keyframes moveX {
+      from { left: 0; } to { left: 200px; }
+    } */
+    @keyframes moveX {
+      from { left: 0; } to { -webkit-transform: rotate(360deg), left: 200px; }
+    }
+
+  @-webkit-keyframes moveY {
+    from { -webkit-transform: rotate(0deg), top: 0; } to { -webkit-transform: rotate(360deg), top: 80vh; }
+  }
+   /* @-moz-keyframes moveY {
+    from { top: 0; } to { top: 100vh; }
+  }
+  @-o-keyframes moveY {
+    from { top: 0; } to { top: 100vh; }
+  } */
+  @keyframes moveY {
+    from { top: 0; } to { top: 100vh; }
+  }
+}

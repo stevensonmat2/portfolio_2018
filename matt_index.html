@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="matt_styles.css">
+    <link rel="icon" href="tri_fav.png" type="image/gif" sizes="16x16">
+    <script src="matt_js.js"></script>
+</head>
+<body>
+
+<div id="container">
+
+    <ul id="menu">
+        <h1>
+            <a href="index.html">MATT STEVENSON</a>
+        </h1>
+        <br>
+        <br>
+        <li class="menu_item" id="listen">
+            <a href="#" onclick="toggle_visibility('listen_links');">listen</a>
+        </li>
+        <br>
+        <li class="menu_item" id="contact">
+            <a href="#" onclick="toggle_visibility('contact_links');">contact</a>
+        </li>
+        <br>
+        <li class="menu_item" id="social">
+            <a href="#" onclick="toggle_visibility('social_links');">social</a>
+        </li>
+        <br>
+        <li class="menu_item" id="press">
+            <a href="#" onclick="toggle_visibility('news_links');">news</a>
+        </li>
+        <br>
+        <li class="menu_item" id="about">
+            <a href="#" onclick="toggle_visibility('about_links');">about</a>
+        </li>
+        <!-- <li class="menu_item" id="blog">
+          <p>blog</p>
+        </li>
+        <li class="menu_item" id="tutorials">
+          <p>tutorials</p>
+        </li> -->
+</div>
+</ul>
+
+<div id="center_page">
+
+
+    <div class="page_item" id="front_page_text">
+
+        <p onclick="clear_welcome">welcome</p>
+
+    </div>
+
+    <div class="no_display page_item" id="listen_links">
+        <a href="https://mattstevenson.bandcamp.com/" target="_blank">bandcamp</a> <br><br>
+        <a href="https://soundcloud.com/matt_stevenson_or" target="_blank">soundcloud</a>
+    </div>
+
+    <div class="no_display page_item" id="contact_links">
+        <!--<form action="mail_handler.php" method="post">-->
+        <!--Name: <input type="text" name="first_name"><br><br>-->
+        <!--Email: <input type="text" name="email"><br><br>-->
+        <!--Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>-->
+        <!--<input type="submit" name="submit" value="Submit" onclick="clear_form">-->
+        <!--</form>-->
+        contact form coming soon
+    </div>
+
+    <div class="no_display page_item" id="social_links">
+        <a href="https://www.facebook.com/mstevensonmusic/" target="_blank">facebook</a> <br><br>
+        <a href="https://www.instagram.com/matt_stevenson_or" target="_blank">instagram</a> <br><br>
+        <!--<a href="https://twitter.com/stevensonmat2" target="_blank">twitter</a>-->
+    </div>
+
+    <div class="no_display page_item" id="news_links">
+        new EP "Hollow Ground"<br>
+        coming soon -5/29/2018<br><br>
+        <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/yMjwH_Qqvco">
+        </iframe>
+        <br><br>
+
+    </div>
+
+    <div class="no_display page_item" id="about_links">
+        Matt Stevenson is a Portland, OR based artist<br>
+        working primarily in electronic music. <br>
+    </div>
+
+    <div class="no_display page_item" id="form_confirm">
+        Thank you for your message
+    </div>
+
+    <div id="triangle_one" onclick="tri_color()"></div>
+
+</div>
+
+<player>
+    <iframe style="border: 0; width: 100%; height: 120px;"
+            src="https://bandcamp.com/EmbeddedPlayer/album=1412773888/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/artwork=none/transparent=true/"
+            seamless><a href="http://mattstevenson.bandcamp.com/album/bordered-entities">Bordered Entities by Matt
+        Stevenson</a></iframe>
+</player>
+
+</body>
+
+<script src="matt_js.js"></script>
+</html>
