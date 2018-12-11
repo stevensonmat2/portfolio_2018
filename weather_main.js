@@ -47,15 +47,14 @@ function f(lat, lon) {
 
 $('#myLoc').click(function () {
 
-    console.log('lolololol');
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(showPosition);
-
+        console.log('geo loc obtained');
     }
 
     function showPosition(pos) {
-        console.log('hahahaha');
         f(pos.coords.latitude, pos.coords.longitude);
+        console.log('hahahaha');
     }
 
     function f(lat, lon) {
@@ -190,7 +189,7 @@ function changeBackground() {
         document.body.style.backgroundImage = "url('https://images.pexels.com/photos/371838/pexels-photo-371838.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb')";
     }
     if (string.includes('haze')) {
-        document.body.style.backgroundImage = "url('http://img.wennermedia.com/social/gettyimages-73909114-ea10777f-1b8d-4abf-854b-aa3db47b294f.jpg')";
+        document.body.style.backgroundImage = "url('https://img.wennermedia.com/social/gettyimages-73909114-ea10777f-1b8d-4abf-854b-aa3db47b294f.jpg')";
     }
     if (string.includes('mist')) {
         document.body.style.backgroundImage = "url('https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg')";
