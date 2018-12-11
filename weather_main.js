@@ -16,7 +16,7 @@ function showPosition(pos) {
 function f(lat, lon) {
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather',
+        url: 'https://api.openweathermap.org/data/2.5/weather',
         type: 'GET',
         data: {
             APPID: '92486e93a8fd35ee17aeb60c1ac229ff',
@@ -38,7 +38,7 @@ function f(lat, lon) {
             document.getElementById('temp').innerHTML = ('the temperature is ' + tem + ' °F');
             document.getElementById('weather').innerHTML = (weath);
             changeBackground();
-            document.getElementById("icon").style.backgroundImage = "url('http://openweathermap.org/img/w/" + weatherIcon + ".png')";
+            document.getElementById("icon").style.backgroundImage = "url('https://openweathermap.org/img/w/" + weatherIcon + ".png')";
 
         }
 
@@ -61,7 +61,7 @@ $('#myLoc').click(function () {
     function f(lat, lon) {
         console.log('memememem');
         $.ajax({
-            url: 'http://api.openweathermap.org/data/2.5/weather',
+            url: 'https://api.openweathermap.org/data/2.5/weather',
             type: 'GET',
             data: {
                 APPID: '92486e93a8fd35ee17aeb60c1ac229ff',
@@ -87,7 +87,7 @@ $('#myLoc').click(function () {
                 }
                 document.getElementById('weather').innerHTML = (weath);
                 changeBackground();
-                document.getElementById("icon").style.backgroundImage = "url('http://openweathermap.org/img/w/" + weatherIcon + ".png')";
+                document.getElementById("icon").style.backgroundImage = "url('https://openweathermap.org/img/w/" + weatherIcon + ".png')";
 
             }
 
@@ -99,7 +99,7 @@ $('#submit').click(function () {
 
     event.preventDefault();
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather',
+        url: 'https://api.openweathermap.org/data/2.5/weather',
         type: 'GET',
         data: {
             q: $('#cityChoice').val(),
@@ -129,7 +129,7 @@ $('#submit').click(function () {
             document.getElementById('weather').innerHTML = (weath);
             changeBackground();
             // console.log(weatherIcon);
-            document.getElementById("icon").style.backgroundImage = "url('http://openweathermap.org/img/w/" + weatherIcon + ".png')";
+            document.getElementById("icon").style.backgroundImage = "url('https://openweathermap.org/img/w/" + weatherIcon + ".png')";
 
 
 
